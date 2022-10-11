@@ -1,0 +1,105 @@
+.aboutMe__flex {
+  display: flex;
+}
+
+.aboutMe__photo {
+  width: 50%;
+}
+
+.aboutMe__photo img {
+  max-width: 100%;
+}
+
+.aboutMe__photo img:after {
+  position: absolute;
+}
+
+.aboutMe__info {
+  width: 50%;
+  height: 700px;
+}
+
+.aboutMe__info-code {
+  margin-bottom: 78px;
+  padding-left: 5px;
+  line-height: 1.3;
+}
+.string-line {
+  font-family: "Inconsolata", monospace;
+}
+
+.small-line-height {
+  line-height: 1;
+}
+
+.title1 {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.title2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.tab {
+  padding-left: 15px;
+}
+
+.stack__terminal-up {
+  position: relative;
+  top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
+
+.stack__terminal-down {
+  position: relative;
+  top: 30px;
+}
+
+.stack__terminal {
+  width: 490px;
+  height: 200px;
+  background-color: #000;
+  padding-left: 5px;
+  /* border: 1px solid gray; */
+}
+
+.stack__progress-done {
+  background-color: #fff;
+  color: #000;
+}
+
+.stack__progress-none {
+  background-color: rgb(139, 139, 139);
+}
+
+@media (max-width: 768px) {
+  .aboutMe__flex {
+    flex-direction: column;
+  }
+  .aboutMe__photo {
+    display: none;
+  }
+
+  .aboutMe__info {
+    width: 100%;
+    background: url(/public/aboutMe-new-mob.jpg) 0 0 no-repeat;
+    background-size: cover;
+  }
+  .stack__terminal {
+    width: 96.9%;
+    height: 250px;
+  }
+  .stack__terminal-down {
+    position: relative;
+    top: 84px;
+  }
+  .aboutMe__info-code {
+    padding-left: 15px;
+    padding-top: 250px;
+    margin-bottom: 50px;
+    opacity: 1;
+  }
+}
