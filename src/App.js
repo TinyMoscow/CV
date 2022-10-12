@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import { Header } from "./Header.js";
 import { AboutMe } from "./AboutMe.js";
-import { Portfolio } from "./Portfolio.js";
+import { Projects } from "./Projects.js";
 
 export const App = () => {
   return (
@@ -12,8 +12,7 @@ export const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<AboutMe />} />
-          <Route path="/aboutMe" element={<AboutMe />} />
-          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio" element={<Projects />} />
         </Routes>
       </Router>
     </>

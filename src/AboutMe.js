@@ -1,5 +1,6 @@
 import React from "react";
 import "./AboutMe.css";
+import { AboutMeBar } from "./AboutMeBar";
 
 export const AboutMe = () => {
   return (
@@ -27,26 +28,34 @@ export const AboutMe = () => {
                 {": "}
                 <span className="title2">Junior Frontend Developer,</span>
               </span>
+              <br />
             </div>
-            <span className="string-line ">
-              <span className="yellow">biography</span>
-              {"() => "}
-              <span className="">
-                "I was born in Tajikistan. When I was 3 years old, our family
-                moved to Moscow. In 2013, graduated from the "Moscow Technical
-                School of Space Engineering" with a degree in Automation of
-                Technological Processes and Productions. For the last five years
-                I have been building my career in aviation and became a flight
-                instructor with Pobeda Airlines. I create music in two projects
-                TRS, Meat Radio. I love my family very much and am happy to be
-                the father of two sons.";
-              </span>
+            <span className="string-line">
+              <span className="blue">education</span>
+              {": "}
+              Moscow Technical School of Space Engineering / 2013,
             </span>
+            <div className="bio-tab">
+              <span className="string-line ">
+                <span className="yellow bio-tab-back">biography</span>
+                {"() => "}
+                <span className="">
+                  "For the last five years I have been building my career in
+                  aviation and became a flight instructor with Pobeda Airlines.
+                  During this time I have managed to develop my soft skills such
+                  as teamwork and mentoring. I don't stop learning new things
+                  and developing. A few month ago, I started to learn
+                  web-development. ";
+                </span>
+              </span>
+            </div>
 
             <br />
             <br />
 
             <a
+              target="_blank"
+              rel="noreferrer"
               className="header__nav-link"
               href="https://hh.ru/resume/74fae686ff00de43f60039ed1f714b53777766"
             >
@@ -64,13 +73,16 @@ export const AboutMe = () => {
             </a>
             <br />
             <br />
+            <br />
             <span className="string-line">
               <span className="darkBlue">const </span>
               <span className="blue">contacts</span>
               {" = "}
               <span className="yellow">{"{ "}</span>
               <br />
-              <span className="gray tab">{"// Press to propery for call"}</span>
+              <span className="gray tab">
+                {"// Press to property for call"}
+              </span>
               <br />
               <a
                 className="header__nav-link"
@@ -86,9 +98,24 @@ export const AboutMe = () => {
                 {": +7(999)987-97-12"}
               </a>
               <br />
-              <a className="header__nav-link" href="https://TRS_prod.t.me/">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                className="header__nav-link"
+                href="https://TRS_prod.t.me/"
+              >
                 <span className="blue tab">telegram</span>
                 {": @TRS_Prod"}
+              </a>
+              <br />
+              <a
+                target="_blank"
+                className="header__nav-link"
+                href="https://github.com/TinyMoscow"
+                rel="noreferrer"
+              >
+                <span className="blue tab">git</span>
+                {": @TinyMoscow"}
               </a>
               <br />
               <span className="yellow ">{"}"}</span>
@@ -97,7 +124,7 @@ export const AboutMe = () => {
           </div>
           <div className="stack__terminal">
             <span className="string-line stack__terminal-up">TERMINAL</span>
-            <div className="stack__terminal-down tab">
+            <div className="stack__terminal-down">
               <span className="string-line">
                 {`MY:Stack> `}
                 <span className="yellow">trs </span>
@@ -105,59 +132,17 @@ export const AboutMe = () => {
               </span>
               <br />
               <br />
-              <span className="string-line">
-                {`[`}
-                <span className="stack__progress-done">##############</span>
-                <span className="stack__progress-none">....</span>
-                {`] | `}
-                <span className="blue">HTML </span>
-                Complited in 80%
-              </span>
+              <AboutMeBar tech="HTML" rate={80} />
               <br />
-              <span className="string-line">
-                {`[`}
-                <span className="stack__progress-done">###########</span>
-                <span className="stack__progress-none">.......</span>
-                {`] | `}
-                <span className="blue">CSS </span>
-                Complited in 60%
-              </span>
+              <AboutMeBar tech="CSS" rate={60} />
               <br />
-              <span className="string-line">
-                {`[`}
-                <span className="stack__progress-done">#############</span>
-                <span className="stack__progress-none">.....</span>
-                {`] | `}
-                <span className="blue">JavaScript </span>
-                Complited in 75%
-              </span>
+              <AboutMeBar tech="JavaScript" rate={75} />
               <br />
-              <span className="string-line">
-                {`[`}
-                <span className="stack__progress-done">######</span>
-                <span className="stack__progress-none">............</span>
-                {`] | `}
-                <span className="blue">React.js </span>
-                Complited in 30%
-              </span>
+              <AboutMeBar tech="React.js" rate={40} />
               <br />
-              <span className="string-line">
-                {`[`}
-                <span className="stack__progress-done">#####</span>
-                <span className="stack__progress-none">.............</span>
-                {`] | `}
-                <span className="blue">TypeScript </span>
-                Complited in 25%
-              </span>
+              <AboutMeBar tech="TypeScript" rate={25} />
               <br />
-              <span className="string-line">
-                {`[`}
-                <span className="stack__progress-done">###</span>
-                <span className="stack__progress-none">...............</span>
-                {`] | `}
-                <span className="blue">Linux </span>
-                Complited in 15%
-              </span>
+              <AboutMeBar tech="Linux" rate={15} />
             </div>
           </div>
         </div>

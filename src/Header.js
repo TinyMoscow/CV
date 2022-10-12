@@ -11,7 +11,7 @@ export const Header = () => {
         </Link>
         <ul className="header__nav">
           <li>
-            <Link className="header__nav-link" to="/aboutMe">
+            <Link className="header__nav-link" to="/">
               <span className="blue">me</span>.
               <span className="yellow">about</span>()
             </Link>
