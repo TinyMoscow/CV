@@ -9,10 +9,12 @@ export const ProjectsDesc = ({ img, desc, stack, url, git }) => {
       </span>
       <span className="projects-title pr-tab">Preview:</span>
       <img className="projects__description-img" src={img} alt="layout"></img>
-      <a target="_blank" rel="noreferrer" className="run-btn" href={`${git}`}>
-        git
-      </a>
-      <a className="run-btn" href={`/portfolio/${url}`}>
+      {git && (
+        <a target="_blank" rel="noreferrer" className="run-btn" href={`${git}`}>
+          git
+        </a>
+      )}
+      <a target="_blank" rel="noreferrer" className="run-btn" href={`${url}`}>
         run
       </a>
       <div className="projects__description-mobile-tab">

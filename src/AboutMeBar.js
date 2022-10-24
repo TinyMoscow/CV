@@ -15,7 +15,8 @@ export const AboutMeBar = ({ tech, rate }) => {
       <span className="stack__progress-none">{minusBar}</span>
       {`] | `}
       <span className="blue">{tech} </span>
-      Complited in {rate}%
+      <span className="hide-in-mobile">Completed in</span>
+      {rate}%
     </span>
   );
 };

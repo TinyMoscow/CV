@@ -113,3 +113,9 @@
     top: 22px;
   }
 }
+
+@media (max-width: 405px) {
+  .hide-in-mobile {
+    display: none;
+  }
+}

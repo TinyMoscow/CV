@@ -21,12 +21,48 @@ export const Projects = () => {
           <br />
           <br />
           <span
-            onClick={() => changer("firstLayout")}
+            onClick={() => changer("aim")}
             className={`projects__elem pr-tab ${
-              description === "firstLayout" && "active"
+              description === "aim" && "active"
             }`}
           >
-            {"C:/users/trs/projects/First_Layout.html "}
+            {"C:/trs/game/aim_trainer.js "}
+          </span>
+          <br />
+          <span
+            onClick={() => changer("drawing")}
+            className={`projects__elem pr-tab ${
+              description === "drawing" && "active"
+            }`}
+          >
+            {"C:/trs/game/drawing.js "}
+          </span>
+          <br />
+          <span
+            onClick={() => changer("slider")}
+            className={`projects__elem pr-tab ${
+              description === "slider" && "active"
+            }`}
+          >
+            {"C:/trs/elements/slider.js "}
+          </span>
+          <br />
+          <span
+            onClick={() => changer("dragndrop")}
+            className={`projects__elem pr-tab ${
+              description === "dragndrop" && "active"
+            }`}
+          >
+            {"C:/trs/elements/dragndrop.js "}
+          </span>
+          <br />
+          <span
+            onClick={() => changer("cards")}
+            className={`projects__elem pr-tab ${
+              description === "cards" && "active"
+            }`}
+          >
+            {"C:/trs/elements/cards.js "}
           </span>
           <br />
           <span
@@ -35,24 +71,55 @@ export const Projects = () => {
               description === "phoneCall" && "active"
             }`}
           >
-            {"C:/users/trs/projects/Phone_Caller.ts "}
+            {"C:/trs/projects/Phone_Caller.ts "}
           </span>
-          {description === "firstLayout" && (
-            <ProjectsDesc
-              img="/portfolio-ban-first.png"
-              desc="First layout of free psd template."
-              stack="HTML, CSS"
-              url={description}
-              git="https://github.com/TinyMoscow/firstLayout"
-            />
-          )}
           {description === "phoneCall" && (
             <ProjectsDesc
-              img="/portfolio-ban-phone.png"
+              img="/portfolio_preview/phone.png"
               desc="Phonebook application."
               stack="HTML, CSS, TypeScript, React.js"
               url={description}
               git="https://github.com/TinyMoscow/phoneCaller.FullStack"
+            />
+          )}
+          {description === "cards" && (
+            <ProjectsDesc
+              img="/portfolio_preview/cards.jpg"
+              desc="Resizing cards element for web-sites."
+              stack="HTML, CSS, JavaScript"
+              url="https://codepen.io/TinyMoscow/pen/eYraeXw"
+            />
+          )}
+          {description === "dragndrop" && (
+            <ProjectsDesc
+              img="/portfolio_preview/dragndrop.png"
+              desc="Drag and drop element for web-sites."
+              stack="HTML, CSS, JavaScript"
+              url="https://codepen.io/TinyMoscow/pen/rNvgoVB"
+            />
+          )}
+          {description === "slider" && (
+            <ProjectsDesc
+              img="/portfolio_preview/slider.jpg"
+              desc="Slider element for web-sites."
+              stack="HTML, CSS, JavaScript"
+              url="https://codepen.io/TinyMoscow/pen/qBYGGvL"
+            />
+          )}
+          {description === "drawing" && (
+            <ProjectsDesc
+              img="/portfolio_preview/draw.png"
+              desc="JS browser mini game. Move your mouse to draw a picture."
+              stack="HTML, CSS, JavaScript"
+              url="https://codepen.io/TinyMoscow/pen/poVXbqO"
+            />
+          )}
+          {description === "aim" && (
+            <ProjectsDesc
+              img="/portfolio_preview/aim.png"
+              desc="JS browser mini game. Develop your aim skill."
+              stack="HTML, CSS, JavaScript"
+              url="https://codepen.io/TinyMoscow/pen/VwxJGBz"
             />
           )}
         </div>
