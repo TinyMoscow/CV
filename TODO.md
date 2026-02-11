@@ -4,4 +4,4 @@
 
 | Название | Файл задачи | Статус | Обновлено |
 |---|---|---|---|
-| Рефакторинг и стандартизация markdown-документации | [tasks/TASK_docs-refactor-2026-02-11.md](./tasks/TASK_DOCS-REFACTOR-2026-02-11.md) | done | 2026-02-11 |
+| Рефакторинг и стандартизация markdown-документации | [tasks/TASK_DOCS-REFACTOR-2026-02-11.md](./tasks/TASK_DOCS-REFACTOR-2026-02-11.md) | done | 2026-02-11 |

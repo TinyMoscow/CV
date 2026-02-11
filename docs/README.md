@@ -6,8 +6,8 @@
 
 - [../README.md](../README.md) — краткое описание проекта, окружения, стек и архитектура.
 - [../TODO.md](../TODO.md) — реестр задач по документации/сопровождению.
-- [../tasks/TASK_docs-refactor-2026-02-11.md](../tasks/TASK_DOCS-REFACTOR-2026-02-11.md) — карточка выполненной задачи по рефакторингу документации.
+- [../tasks/TASK_DOCS-REFACTOR-2026-02-11.md](../tasks/TASK_DOCS-REFACTOR-2026-02-11.md) — карточка выполненной задачи по рефакторингу документации.
 
 ## Архив
 
-- [archive/README.cra-original.md](./archive/README.CRA-ORIGINAL.md) — исходный шаблонный README от Create React App (перенесён в архив как неактуальный для проектной документации).
+- [archive/README.CRA-ORIGINAL.md](./archive/README.CRA-ORIGINAL.md) — исходный шаблонный README от Create React App (перенесён в архив как неактуальный для проектной документации).
