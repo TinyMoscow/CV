@@ -2,7 +2,7 @@
 
 - **Status:** done
 - **Branch:** docs/refactor-2026-02-11-cv-trs
-- **PR:** blocked (не удалось создать автоматически; см. отчёт)
+- **PR:** https://github.com/TinyMoscow/CV/pull/1
 - **Updated:** 2026-02-11
 
 ## Описание
