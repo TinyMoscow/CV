@@ -2,8 +2,10 @@ module.exports = {
   apps: [
     {
       name: "trs",
-      cwd: "/projects/trscv",
-      script: "npm run prod",
+      cwd: process.env.TRS_RELEASE_DIR || __dirname,
+      script: "node_modules/serve/build/main.js",
+      interpreter: "/root/.nvm/versions/node/v22.23.4/bin/node",
+      args: "-s build",
       autorestart: true,
       env: {
         HOST: "0.0.0.0",

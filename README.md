@@ -24,3 +24,5 @@
 
 - Реестр задач: [TODO.md](./TODO.md)
 - Индекс документации: [docs/README.md](./docs/README.md)
+
+[Обновление безопасности и проверка выпуска](./docs/SECURITY-UPDATE-2026-11-06.md).
